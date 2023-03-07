@@ -5,134 +5,122 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+import diliana_durkajova from '@/images/speakers/diliana_durkajova.jpg'
+import lubos_pravznovsky from '@/images/speakers/lubos_pravznovsky.jpg'
+import michal_weis from '@/images/speakers/michal_weis.jpg'
+import peter_dodok from '@/images/speakers/peter_dodok.jpg'
+import peter_kosinar from '@/images/speakers/peter_kosinar.jpg'
+import mirka_uhnak from '@/images/speakers/mirka_uhnak.jpg'
 
 const days = [
   {
-    name: 'Panelové diskusie',
-    date: '18:10',
+    name: 'Veľká Aula',
+    date: 'Panelové diskusie ',
     dateTime: '2022-04-04',
     speakers: [
       {
         name: 'Peter Dodok',
         role: 'Cloud Based Solutions Manager, Exxeta',
-        image: stevenMchailImage,
+        image: peter_dodok,
       },
       {
         name: 'Mirka Uhnak',
         role: 'CEO, Mini Tech MBA',
-        image: jaquelinIschImage,
+        image: mirka_uhnak,
       },
       {
         name: 'Ľuboš Práznovský',
         role: 'Head of Software Design and Development, Tatra Banka',
-        image: dianneGuilianelliImage,
+        image: lubos_pravznovsky,
       },
       {
         name: 'Peter Košinár',
         role: 'Technical Fellow, ESET',
-        image: ronniCantadoreImage,
+        image: peter_kosinar,
       },
       {
         name: 'Diliana Durkajová',
         role: 'Head of Artificial Intelligence, Slovak Telekom',
-        image: erhartCockrinImage,
+        image: diliana_durkajova,
       },
       {
         name: 'Michal Weis',
         role: 'CEO, IBL Software Engineering',
-        image: parkerJohnsonImage,
+        image: michal_weis,
       },
     ],
   },
   {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
+    name: 'Prednášková miestnosť',
+    date: 'Prednášky',
     dateTime: '2022-04-05',
     speakers: [
       {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
+        name: 'Peter Dodok',
+        role: 'Cloud Based Solutions Manager, Exxeta',
+        image: peter_dodok,
       },
       {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
+        name: 'Mirka Uhnak',
+        role: 'CEO, Mini Tech MBA',
+        image: mirka_uhnak,
       },
       {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
+        name: 'Ľuboš Práznovský',
+        role: 'Head of Software Design and Development, Tatra Banka',
+        image: lubos_pravznovsky,
       },
       {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
+        name: 'Peter Košinár',
+        role: 'Technical Fellow, ESET',
+        image: peter_kosinar,
       },
       {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
+        name: 'Diliana Durkajová',
+        role: 'Head of Artificial Intelligence, Slovak Telekom',
+        image: diliana_durkajova,
       },
       {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
+        name: 'Michal Weis',
+        role: 'CEO, IBL Software Engineering',
+        image: michal_weis,
       },
     ],
   },
   {
-    name: 'Interviews',
-    date: 'April 6',
+    name: 'Unispace',
+    date: 'Speed dating',
     dateTime: '2022-04-06',
     speakers: [
       {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
+        name: 'Peter Dodok',
+        role: 'Cloud Based Solutions Manager, Exxeta',
+        image: peter_dodok,
       },
       {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
+        name: 'Mirka Uhnak',
+        role: 'CEO, Mini Tech MBA',
+        image: mirka_uhnak,
       },
       {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
+        name: 'Ľuboš Práznovský',
+        role: 'Head of Software Design and Development, Tatra Banka',
+        image: lubos_pravznovsky,
       },
       {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
+        name: 'Peter Košinár',
+        role: 'Technical Fellow, ESET',
+        image: peter_kosinar,
       },
       {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
+        name: 'Diliana Durkajová',
+        role: 'Head of Artificial Intelligence, Slovak Telekom',
+        image: diliana_durkajova,
       },
       {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
+        name: 'Michal Weis',
+        role: 'CEO, IBL Software Engineering',
+        image: michal_weis,
       },
     ],
   },

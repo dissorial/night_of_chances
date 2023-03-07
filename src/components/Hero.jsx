@@ -1,13 +1,12 @@
 import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import backgroundImage from '@/images/noc.png'
 
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
+      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-teal-50">
         <Image
           className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
           src={backgroundImage}
@@ -27,14 +26,14 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-teal-900">
             <p>
-              Night of Chances, skrátene NoC, je celovečerný
-              kariérno-networkovací event, plný eticky korektných firiem, v
+              Night of Chances (skrátene NoC) je celovečerný
+              kariérno-networkovací event plný eticky korektných firiem, v
               ktorých proste chceš pracovať!
             </p>
             <p>
-              S nami nielenže naštartuješ svoju kariéru raketovým tempom, ale
-              ešte sa aj naskillíš na workshopoch, prednáškach a pokecáš si s
-              C-lebritami.
+              Posuň svoju kariéru rýchlym tempom a získaj nové zručnosti na
+              workshopoch, prednáškach a pri neformálnych rozhovoroch s
+              odborníkmi.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
@@ -48,7 +47,7 @@ export function Hero() {
               ['Speed dating-ov', '8'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-sm text-teal-600">{name}</dt>
+                <dt className="text-md font-mono text-teal-600">{name}</dt>
                 <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-teal-900">
                   {value}
                 </dd>

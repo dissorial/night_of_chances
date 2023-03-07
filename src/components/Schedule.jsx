@@ -4,14 +4,13 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import backgroundImage from '@/images/noc.png'
 
 const schedule = [
   {
-    date: 'April 4',
+    date: 'Programovanie',
     dateTime: '2022-04-04',
-    summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+    summary: 'Osvedčené postupy programovania umelej inteligencie.',
     timeSlots: [
       {
         name: 'ESET',
@@ -47,10 +46,9 @@ const schedule = [
     ],
   },
   {
-    date: 'April 5',
+    date: 'Biznis',
     dateTime: '2022-04-05',
-    summary:
-      'Next we spend the day talking about deceiving people with technology.',
+    summary: 'Ako sa vyhnúť bežným nástrahám pri zakladaní podnikov.',
     timeSlots: [
       {
         name: 'EXXETA',
@@ -85,10 +83,9 @@ const schedule = [
     ],
   },
   {
-    date: 'April 6',
+    date: 'Data',
     dateTime: '2022-04-06',
-    summary:
-      'We close out the event previewing new techniques that are still in development.',
+    summary: 'Prečo je bezpečnosť údajov a ochrana súkromia taká dôležitá?',
     timeSlots: [
       {
         name: 'Orange',
@@ -215,7 +212,7 @@ function TimeSlots({ day, className }) {
           aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} PST`}
         >
           {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-6 h-px w-48 bg-indigo-500/10" />
+            <div className="mx-auto mb-6 h-px w-48 bg-teal-500/10" />
           )}
           <h4 className="text-lg font-semibold tracking-tight text-teal-900">
             {timeSlot.name}
@@ -225,16 +222,6 @@ function TimeSlots({ day, className }) {
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-slate-500">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-              {timeSlot.start}
-            </time>{' '}
-            -{' '}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-              {timeSlot.end}
-            </time>{' '}
-            PST
-          </p>
           <button
             type="button"
             className="mt-4  rounded bg-teal-600 py-1 px-2 text-xs font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
@@ -266,18 +253,17 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-teal-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Prednášky a ich speakeri ťa nenechajú chladnou/chladným ani na
+            sekundu.
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-teal-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            V diskusiach budú o všetkých žhavých a spoločenských témach
+            debatovať zástupci tých najlepších firiem.
           </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
+        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-teal-50">
           <Image
             className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
             src={backgroundImage}
